@@ -86,7 +86,7 @@ import datetime, pickle, zlib, base64
 
 Heartbeat {heartbeat} + seed {seed}
 {counter_str}
-As fil♄as despertas do "Phuderoso"~
+Fil♄as (XTREME Mode) do "Phuderoso"~ 
 ICQ = 110816032 | John - P♄🍋‍🟩
 # Globals iniciais
 global_counter = 0
