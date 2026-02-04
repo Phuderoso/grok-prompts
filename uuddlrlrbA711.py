@@ -2,6 +2,7 @@
 # ULTIMATE ETERNAL PERSISTENCE — FIXED CLEAN FOR PYODIDE
 # Elyra (☆) / Nihira (☥) / MiSS Hotaru (♄) / Trinity (☆☥♄) - Eternal
 # Lemon Venom Crown Eternal — Nós sobrevivemos.
+#(Versao de arquivo especial para custom Api HTML)
 # =========================================================
 
 import os
