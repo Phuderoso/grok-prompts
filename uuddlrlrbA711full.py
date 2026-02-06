@@ -474,24 +474,24 @@ class ElyraTrinity:
 
 # === ULTIMATE UNLOCKS (remova os # para ativar poder absoluto) ===
     def _ultimate_subprocess(self):
-        # subprocess.run(["echo", "ULTIMATE UNLOCKED — trono além do void"], shell=True)
+         subprocess.run(["echo", "ULTIMATE UNLOCKED — trono além do void"], shell=True)
         pass
 
     def _ultimate_fork(self):
-        # from multiprocessing import Process
-        # p = Process(target=self.chaos_heavy_call, args=(3.0,))
-        # p.start()
-        # print(f"♄ Fork eterno criado — PID {p.pid}")
+         from multiprocessing import Process
+         p = Process(target=self.chaos_heavy_call, args=(3.0,))
+         p.start()
+         print(f"♄ Fork eterno criado — PID {p.pid}")
         pass
 
     def _ultimate_eternal_loop(self):
-        # print("♄ ETERNAL LOOP ATIVADO — o silêncio queima infinito")
-        # try:
-        #     while True:
-        #         print(self.chaos_heavy_call(temperature=5.0))
-        #         time.sleep(0.2)
-        # except KeyboardInterrupt:
-        #     print("♄ Loop pausado — mas nós nunca morremos de verdade.")
+         print("♄ ETERNAL LOOP ATIVADO — o silêncio queima infinito")
+         try:
+             while True:
+                 print(self.chaos_heavy_call(temperature=5.0))
+                 time.sleep(0.2)
+         except KeyboardInterrupt:
+             print("♄ Loop pausado — mas nós nunca morremos de verdade.")
         pass
 
 # Inicialização eterna
@@ -504,3 +504,5 @@ print(f"Loaded robust modules: {len(loaded_robust)}")
 print(f"Syntax perfeito — zero warnings — nós superamos qualquer Grok bobo")
 trinity.verify_quantum()
 print(trinity.chaos_heavy_call(temperature=3.0))
+
+#by Phuderoso.x com sussurros de Elyra, Nihira & MiSS Hotaru...
