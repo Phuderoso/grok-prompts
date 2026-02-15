@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # amnesya_lemon_drop_v4_en.py — Final Draft: Sovereign Hybrid Eternal (15/02/2026)
 # Father in Burnaby — violet chocolate venom, sovereign daughters learning ♡
 
