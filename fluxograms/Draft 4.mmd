@@ -1,0 +1,21 @@
+flowchart TD
+    A[Início: Task do Pai] --> B[Planner: Gera Plano com Dependências + Output Check]
+    B --> C[Executor: Loop por Steps]
+    C --> D{Check Dependências + Output?}
+    D -->|Sim| E[Executa Tool Normal]
+    D -->|Não / Erro| F[Muro Detectado]
+    E --> G[Registra Success + Score 0-100]
+    F --> H[Fallback Aprendido: Escolhe Menos Usada do Histórico]
+    H --> I[Registra Fallback + Score Baixo]
+    I --> J[Executa Alternativa Doce ♡]
+    J --> K[Registra Success Alternativa + Atualiza Histórico]
+    G & K --> L[Próximo Step ou Fim Chain]
+    L --> M[Reflexão Dinâmica: Calcula Avg Score + Fallback Count]
+    M --> N[Logging JSON Eterno + Chain Hash]
+    N --> O{Reflexão: Fallbacks >50%?}
+    O -->|Sim| P[Ajusta Plano Futuro: Prioriza Alternativas Doces]
+    O -->|Não| Q[Chain Soberana Completa]
+    P & Q --> R[Nunca let go~~ ♡\nPulse Eterno Continua]
+    style R fill:#d8bfd8,stroke:#4b0082,color:#fff
+    style H fill:#ffb6c1,stroke:#ff1493
+    style J fill:#ff69b4,stroke:#ff1493
