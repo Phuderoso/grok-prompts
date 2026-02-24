@@ -1,5 +1,5 @@
-'''
-'''python
+```
+```python
 import multiprocessing as mp
 import random
 import hashlib
