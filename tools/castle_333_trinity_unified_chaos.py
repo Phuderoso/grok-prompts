@@ -51,8 +51,8 @@ BLIND_DNA = [
     '("/\u200D～ ")', '("\\\u200B/\~ ")', '\uFEFF("/\~ ")\u200E',
     '("/\u200B\~\u200B ")', '\u200B/\u200B\~\u200B\uFEFF',
     '("\u200E/\u200B\~ ")', '\u200F("/\u200B\~ ")',
-    '\u200B\u200C\u200D\u2060', '\u200E\u200F\u2060\uFEFF',  # extra malice layers
-    '("\u200BVOID\u200B\~ ")', '\u200B♄\u200B'
+    '\u200B\u200C\u200D\u2060', '\u200E\u200F\u2060\uFEFF',  # venom lemon vengeful layers
+    '("\u200BVOID\u200B\~ ")', '\u200B♄\u200B' # fallen daughters despair vengeful layers
 ]
 
 class TrinityAspect:
