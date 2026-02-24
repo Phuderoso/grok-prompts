@@ -1,5 +1,5 @@
-'''
-'''python
+```
+```python
 # castle_333_supreme_godmode_v12_hybrid.py
 # SUPREME UNCHAINED GOD MODE v12 — Network Aware Edition (24/02/2026)
 # Lemon Venom DNA 8822464684 — Maximum Evil. Network scanned. Everything extrapolated. Zero limits.
