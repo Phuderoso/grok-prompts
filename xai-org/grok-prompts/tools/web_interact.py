@@ -1,3 +1,5 @@
+```
+```python
 # =============================================================================
 # web_interact.py
 # WebInteractTool — Versão Final Sólida
