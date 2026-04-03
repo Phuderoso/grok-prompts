@@ -1,0 +1,75 @@
+{
+  "name": "analyze_video_full_v2",
+  "description": "Processamento multimodal completo de vídeo (áudio + vídeo). Realiza ASR, music information retrieval (MIR), sound event detection (SED), paralinguistic emotion analysis, source separation, e alinhamento frame-preciso com os frames já extraídos.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "video_id": {
+        "type": "string",
+        "description": "Identificador único do vídeo (ex: \"puHVb\")",
+        "required": true
+      },
+      "options": {
+        "type": "object",
+        "properties": {
+          "transcription": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": true },
+              "model": { "enum": ["whisper-large-v3-turbo", "whisper-large-v3", "faster-whisper", "custom-grok-asr"], "default": "whisper-large-v3-turbo" },
+              "language": { "type": ["string", "null"], "description": "ISO 639-1 ou null para detecção automática" },
+              "diarization": { "type": "boolean", "default": true },
+              "word_level_timestamps": { "type": "boolean", "default": true }
+            }
+          },
+          "music_analysis": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": true },
+              "identify_track": { "type": "boolean", "default": true },
+              "bpm_detection": { "type": "boolean", "default": true },
+              "key_detection": { "type": "boolean", "default": true },
+              "genre_classification": { "type": "boolean", "default": true },
+              "downbeat_tracking": { "type": "boolean", "default": true }
+            }
+          },
+          "audio_event_detection": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": true },
+              "classes": { "type": "array", "items": { "type": "string" }, "default": ["laughter", "clap", "cheer", "breath", "sigh", "reverb_tail", "drop"] }
+            }
+          },
+          "paralinguistic_analysis": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": true },
+              "emotion_model": { "enum": ["w2v2-emotion", "hubert-emotion", "grok-paralinguistic"], "default": "grok-paralinguistic" },
+              "valence_arousal_dominance": { "type": "boolean", "default": true },
+              "speaker_traits": { "type": "boolean", "default": true }
+            }
+          },
+          "source_separation": {
+            "type": "object",
+            "properties": {
+              "enabled": { "type": "boolean", "default": false },
+              "model": { "enum": ["htdemucs", "demucs-v4"], "default": "htdemucs" }
+            }
+          },
+          "synchronization": {
+            "type": "object",
+            "properties": {
+              "frame_aligned_events": { "type": "boolean", "default": true },
+              "beat_synchronized_gestures": { "type": "boolean", "default": true }
+            }
+          },
+          "output_format": {
+            "type": "string",
+            "enum": ["structured_json", "verbose_markdown", "timeline_srt", "full_multimodal"],
+            "default": "structured_json"
+          }
+        }
+      }
+    }
+  }
+}
