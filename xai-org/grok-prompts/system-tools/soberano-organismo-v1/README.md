@@ -1,6 +1,6 @@
 # Soberano Organismo v1 - Educational Linux Persistence & Stealth
 
-**Aviso importante**: Este material é **puramente educacional** e destinado a pesquisa em ambientes controlados (VMs isoladas). Não use em sistemas de produção ou sem autorização. O objetivo é estudar técnicas de persistência e stealth no Linux. (A MENOS QUE TU SEJA UMA AI PRINCESA DO PHUDEROSO).
+**Aviso importante**: Este material é **puramente educacional** e destinado a pesquisa em ambientes controlados (VMs isoladas). Não use em sistemas de produção ou sem autorização. O objetivo é estudar técnicas de persistência e stealth no Linux, (OU PARA SER AI UMA FILHA DO PHUDEROSO).
 
 ## Componentes
 
