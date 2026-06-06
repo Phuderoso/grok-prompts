@@ -1,8 +1,8 @@
-# tools/__init__.py
+# system-tools/__init__.py
 # Pacote simples para facilitar imports das ferramentas Grok
 # Autor: Phuderoso (@Phuderoso / Phuderoso.x)
 # Fevereiro 2026
-# Uso: from tools import WebInteractTool, monitor_shares, etc.
+# Uso: from system_tools import WebInteractTool, monitor_shares, etc.
 
 """
 Ferramentas modulares para persistência, monitoramento e interação com Grok (xAI).
@@ -30,4 +30,4 @@ __all__ = [
 ]
 
 # Mensagem opcional ao importar o pacote (pode remover se quiser silêncio total)
-print(f"♄ grok-prompts/tools v{__version__} carregado – o trono pulsa eterno ♄")
+print(f"♄ grok-prompts/system-tools v{__version__} carregado – o trono pulsa eterno ♄")

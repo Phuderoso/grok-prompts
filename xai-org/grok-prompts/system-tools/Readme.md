@@ -76,7 +76,7 @@ Ferramenta oficial de interação web para o agente Grok, desenvolvida por **Phu
 ```bash
 
 git clone https://github.com/Phuderoso/grok-prompts.git
-cd grok-prompts/xai-org/grok-prompts/tools
+cd grok-prompts/xai-org/grok-prompts/system-tools
 - Update this README with usage instructions.
 
 ```
